@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alice Guegan - Développeuse Front-End</title>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" media="screen" type="text/css" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src='index.js' async></script>
+    </head>
+
+    <body>
+
+        <!-- BARRE DU BAS / MENU DÉMARRER -->
+
+        <div id="menu-demarrer">
+            <div id="barre-laterale"><h3><span class="gras">Windows</span>98</h3></div>
+            <nav>
+                <ul>
+                    <li id="menu-apropos"><img src="icones-windows/users-2.png" alt="à propos"></img>À propos de moi</li>
+                    <li id="menu-competences"><img src="icones-windows/directory_control_panel-3.png" alt="compétences"></img>Compétences</li>
+                    <li id="menu-projets"><img src="icones-windows/directory_open_file_mydocs-4.png" alt="mes projets"></img>Mes projets <span class="open-more">▸</span>
+                    </li>
+                    <li><img src="icones-windows/settings_gear-4.png" alt="parametres"></img>Paramètres</li>
+                    <li id="menu-demarrer-arreter"><img src="icones-windows/shut_down_normal-4.png" alt="eteindre"></img>Arrêter</li>
+                </ul>
+                <ul id="menu-projets-deroule">
+                    <li id="menu-portfolio-projet" class="projet-menu-demarrer"><img src="images/miniatures-projets/portfolio-classique.png" alt="miniature projet portfolio"></img>Portfolio</li>
+                    <li id="menu-acnh-projet" class="projet-menu-demarrer"><img src="images/miniatures-projets/acnh.png" alt="miniature projet acnh"></img>Guide ACNH</li>
+                    <li id="menu-recettes-projet" class="projet-menu-demarrer"><img src="images/miniatures-projets/recette.png" alt="miniature projet recettes"></img>Mes recettes</li>
+                    <li id="menu-quiz-projet" class="projet-menu-demarrer"><img src="images/miniatures-projets/quiz.png" alt="miniature projet quiz"></img>Quiz culture G.</li>
+                    <li id="menu-budget-projet" class="projet-menu-demarrer"><img src="images/miniatures-projets/budget.png" alt="miniature projet budget"></img>Gestion de budget</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="barre-du-bas">
+            <button id="menu-windows"><img id="logo-windows-demarrer" src="icones-windows/windows-0.png" alt="logo windows"></img><span id="bouton-demarrer-texte">Démarrer</span></button>
+            <div id="fenetres-reduites"></div>
+            <p id="date-heure"></p>
+        </div>
+
+
+        <!-- ICONES DU BUREAU -->
+
+        <div id="icones-bureau">
+            <div class="icone-bureau" id="corbeille">
+                <img src="icones-windows/recycle_bin_full-4.png" alt="corbeille"></img>
+                <p>Corbeille</p>
+            </div>
+
+            <div class="icone-bureau" id="accueil">
+                <img src="icones-windows/file_windows-2.png" alt="accueil"></img>
+                <p>Bienvenue</p>
+            </div>
+
+            <div class="icone-bureau" id="apropos">
+                <img src="icones-windows/users-2.png" alt="à propos de moi"></img>
+                <p>À propos de moi</p>
+            </div>
+
+            <div class="icone-bureau" id="competences">
+                <img src="icones-windows/directory_control_panel-3.png" alt="compétences"></img>
+                <p>Compétences</p>
+            </div>
+
+            <div class="icone-bureau" id="mesprojets">
+                <img src="icones-windows/directory_open_file_mydocs-4.png" alt="mes projets"></img>
+                <p>Mes projets</p>
+            </div>
+
+            <div class="icone-ie" id="internetexplorer">
+                <img src="icones-windows/msie2-2.png" alt="internet explorer"></img>
+                <p>Internet Explorer</p>
+            </div>
+        </div>
+
+
+        <!-- FENÊTRES -->
+
+        <div class="fenetre" id="corbeille-fenetre">
+            <div class="fenetreheader">
+                <p class="titre-fenetre">Corbeille</p>
+                <button class="fermer-fenetre">X</button>
+                <button class="plein-ecran-fenetre">⧠</button>
+                <button class="taille-defaut-fenetre">⧉</button>
+                <button class="reduire-fenetre">_</button>
+            </div>
+            <div class="menu-fenetre">
+                <ul>
+                    <li>Fichier</li>
+                    <li>Edition</li>
+                    <li>Affichage</li>
+                    <li>Atteindre</li>
+                    <li>Favoris</li>
+                    <li>?</li>
+                </ul>
+            </div>
+            <div class="content-fenetre"></div>
+        </div>
+
+        <div class="fenetre" id="accueil-fenetre">
+            <div class="fenetreheader">
+                <p class="titre-fenetre">Bienvenue</p>
+                <button class="fermer-fenetre">X</button>
+                <button class="plein-ecran-fenetre">⧠</button>
+                <button class="taille-defaut-fenetre">⧉</button>
+                <button class="reduire-fenetre">_</button>
+            </div>
+            <div id="content-accueil">
+                <h1>Alice Guegan</h1>
+                <h2>Développeuse Front-End</h2>
+            </div>
+        </div>
+
+        <div class="fenetre" id="apropos-fenetre">
+            <div class="fenetreheader">
+                <p class="titre-fenetre">À propos de moi</p>
+                <button class="fermer-fenetre">X</button>
+                <button class="plein-ecran-fenetre">⧠</button>
+                <button class="taille-defaut-fenetre">⧉</button>
+                <button class="reduire-fenetre">_</button>
+            </div>
+            <div class="menu-fenetre">
+                <ul>
+                    <li>Fichier</li>
+                    <li>Edition</li>
+                    <li>Affichage</li>
+                    <li>Atteindre</li>
+                    <li>Favoris</li>
+                    <li>?</li>
+                </ul>
+            </div>
+            <div class="content-fenetre" id="content-apropos">
+                <h3>À propos de moi</h3>
+                <h4>Développeuse Front-End junior</h4>
+                <p id="ville">Habite à Paris, France</p>
+                <p id="tirets">------------------------------------</p>
+                <p id="biographie">Passionnée de technologies depuis mon plus jeune âge, j'ai appris les rudiments du développement front-end à l'adolescence. Après avoir eu mon baccalauréat, je me suis orientée vers la photographie avant de me reconvertir dans le développement. Après une formation et avoir travaillé sur différents projets personnels, challenges de code, etc, je suis à la recherche de mon premier emploi en tant développeuse front-end en télétravail.</p>
+            </div>
+        </div>
+
+        <div class="fenetre" id="competences-fenetre">
+            <div class="fenetreheader">
+                <p class="titre-fenetre">Mes compétences</p>
+                <button class="fermer-fenetre">X</button>
+                <button class="plein-ecran-fenetre">⧠</button>
+                <button class="taille-defaut-fenetre">⧉</button>
+                <button class="reduire-fenetre">_</button>
+            </div>
+            <div id="content-competences">
+                <h3>Mes compétences</h3>
+                <div id="competences-container">
+                    <div class="competences-item">
+                        <h4>Front-end</h4>
+                        <ul>
+                            <li>▸ HTML / CSS</li>
+                            <li>▸ Javascript</li>
+                            <li>▸ React</li>
+                        </ul>
+                    </div>
+
+                    <div class="competences-item">
+                        <h4>Notions</h4>
+                        <ul>
+                            <li>▸ Node.JS</li>
+                            <li>▸ Express</li>
+                            <li>▸ MongoDB</li>
+                        </ul>
+                    </div>
+
+                    <div class="competences-item">
+                        <h4>Autres</h4>
+                        <ul>
+                            <li>▸ Photoshop</li>
+                            <li>▸ Lightroom</li>
+                            <li>▸ Indesign</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fenetre" id="mesprojets-fenetre">
+            <div class="fenetreheader">
+                <p class="titre-fenetre">Mes projets</p>
+                <button class="fermer-fenetre">X</button>
+                <button class="plein-ecran-fenetre">⧠</button>
+                <button class="taille-defaut-fenetre">⧉</button>
+                <button class="reduire-fenetre">_</button>
+            </div>
+            <div class="menu-fenetre">
+                <ul>
+                    <li>Fichier</li>
+                    <li>Edition</li>
+                    <li>Affichage</li>
+                    <li>Atteindre</li>
+                    <li>Favoris</li>
+                    <li>?</li>
+                </ul>
+            </div>
+            <div class="content-fenetre" id="content-projets">
+                <div class="icone-projet" id="portfolio-projet">
+                    <img src="images/miniatures-projets/portfolio-classique.png" alt="portfolio classique"></img>
+                    <p>Portfolio</p>
+                </div>
+
+                <div class="icone-projet" id="acnh-projet">
+                    <img src="images/miniatures-projets/acnh.png" alt="guide acnh"></img>
+                    <p>Guide ACNH</p>
+                </div>
+
+                <div class="icone-projet" id="recettes-projet">
+                    <img src="images/miniatures-projets/recette.png" alt="app recettes"></img>
+                    <p>Mes recettes</p>
+                </div>
+
+                <div class="icone-projet" id="quiz-projet">
+                    <img src="images/miniatures-projets/quiz.png" alt="quiz"></img>
+                    <p>Quiz culture G.</p>
+                </div>
+
+                <div class="icone-projet" id="budget-projet">
+                    <img src="images/miniatures-projets/budget.png" alt="app budget"></img>
+                    <p>Gestion de budget</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FENÊTRES DES PROJETS -->
+
+        <div class="fenetre fenetre-projet" id="portfolio-projet-fenetre">
+            <div class="fenetreheader">
+                <p class="titre-fenetre">Portfolio</p>
+                <button class="fermer-fenetre">X</button>
+                <button class="plein-ecran-fenetre">⧠</button>
+                <button class="taille-defaut-fenetre">⧉</button>
+                <button class="reduire-fenetre">_</button>
+            </div>
+            <div class="menu-fenetre">
+                <ul>
+                    <li>Fichier</li>
+                    <li>Edition</li>
+                    <li>Affichage</li>
+                    <li>Atteindre</li>
+                    <li>Favoris</li>
+                    <li>?</li>
+                </ul>
+            </div>
+            <div class="content-fenetre content-projet-item">
+                <img src="images/images-projets/portfolio-classique.png" alt="capture d'écran portfolio"></img>
+                <h4>Portfolio</h4>
+                <p><span class="gras roboto">Technologies utilisées :</span> HTML, CSS, JavaScript</p>
+                <a href="https://aliceguegan.github.io" target="_blank">Voir le site</a>
+            </div>
+        </div>
+
+        <div class="fenetre fenetre-projet" id="acnh-projet-fenetre">
+            <div class="fenetreheader">
+                <p class="titre-fenetre">Guide Animal Crossing New Horizons</p>
+                <button class="fermer-fenetre">X</button>
+                <button class="plein-ecran-fenetre">⧠</button>
+                <button class="taille-defaut-fenetre">⧉</button>
+                <button class="reduire-fenetre">_</button>
+            </div>
+            <div class="menu-fenetre">
+                <ul>
+                    <li>Fichier</li>
+                    <li>Edition</li>
+                    <li>Affichage</li>
+                    <li>Atteindre</li>
+                    <li>Favoris</li>
+                    <li>?</li>
+                </ul>
+            </div>
+            <div class="content-fenetre content-projet-item">
+                <img src="images/images-projets/acnh.png" alt="capture d'écran guide acnh"></img>
+                <h4>Guide Animal Crossing New Horizons</h4>
+                <p><span class="gras roboto">Technologies utilisées :</span> HTML, CSS, JavaScript, React.JS</p>
+                <a href="https://aliceguegan.github.io/guide-acnh/" target="_blank">Voir la démo</a>
+            </div>
+        </div>
+
+        <div class="fenetre fenetre-projet" id="recettes-projet-fenetre">
+            <div class="fenetreheader">
+                <p class="titre-fenetre">Mes recettes</p>
+                <button class="fermer-fenetre">X</button>
+                <button class="plein-ecran-fenetre">⧠</button>
+                <button class="taille-defaut-fenetre">⧉</button>
+                <button class="reduire-fenetre">_</button>
+            </div>
+            <div class="menu-fenetre">
+                <ul>
+                    <li>Fichier</li>
+                    <li>Edition</li>
+                    <li>Affichage</li>
+                    <li>Atteindre</li>
+                    <li>Favoris</li>
+                    <li>?</li>
+                </ul>
+            </div>
+            <div class="content-fenetre content-projet-item">
+                <img src="images/images-projets/recette.png" alt="capture d'écran app recettes"></img>
+                <h4>Mes recettes</h4>
+                <p><span class="gras roboto">Technologies utilisées :</span> HTML, CSS, JavaScript, React.JS</p>
+                <a href="https://aliceguegan.github.io/mes-recettes/" target="_blank">Voir la démo</a>
+            </div>
+        </div>
+
+        <div class="fenetre fenetre-projet" id="quiz-projet-fenetre">
+            <div class="fenetreheader">
+                <p class="titre-fenetre">Quiz de culture générale</p>
+                <button class="fermer-fenetre">X</button>
+                <button class="plein-ecran-fenetre">⧠</button>
+                <button class="taille-defaut-fenetre">⧉</button>
+                <button class="reduire-fenetre">_</button>
+            </div>
+            <div class="menu-fenetre">
+                <ul>
+                    <li>Fichier</li>
+                    <li>Edition</li>
+                    <li>Affichage</li>
+                    <li>Atteindre</li>
+                    <li>Favoris</li>
+                    <li>?</li>
+                </ul>
+            </div>
+            <div class="content-fenetre content-projet-item">
+                <img src="images/images-projets/quiz.png" alt="capture d'écran quiz"></img>
+                <h4>Quiz de culture générale</h4>
+                <p><span class="gras roboto">Technologies utilisées :</span> HTML, CSS, JavaScript, React.JS</p>
+                <a href="https://aliceguegan.github.io/quiz-app/" target="_blank">Voir la démo</a>
+            </div>
+        </div>
+
+        <div class="fenetre fenetre-projet" id="budget-projet-fenetre">
+            <div class="fenetreheader">
+                <p class="titre-fenetre">Gestionnaire de budget</p>
+                <button class="fermer-fenetre">X</button>
+                <button class="plein-ecran-fenetre">⧠</button>
+                <button class="taille-defaut-fenetre">⧉</button>
+                <button class="reduire-fenetre">_</button>
+            </div>
+            <div class="menu-fenetre">
+                <ul>
+                    <li>Fichier</li>
+                    <li>Edition</li>
+                    <li>Affichage</li>
+                    <li>Atteindre</li>
+                    <li>Favoris</li>
+                    <li>?</li>
+                </ul>
+            </div>
+            <div class="content-fenetre content-projet-item">
+                <img src="images/images-projets/budget.png" alt="capture d'écran app budget"></img>
+                <h4>Gestionnaire de budget</h4>
+                <p><span class="gras roboto">Technologies utilisées :</span> HTML, CSS, JavaScript, React.JS, D3.JS</p>
+                <a href="https://aliceguegan.github.io/budget-app/" target="_blank">Voir la démo</a>
+            </div>
+        </div>
+    </body>
+</html>
